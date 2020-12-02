@@ -1,0 +1,6 @@
+[en]
+RZ_AWARD_PLAYER_KILLED = Award for neutralizing an enemy.
+RZ_AWARD_PLAYER_INFECT = Award for infecting an enemy.
+RZ_AWARD_TEAM_WIN = Team award.
+RZ_AWARD_TEAM_LOSER = Income for losing.
+RZ_AWARD_TEAM_DRAW = Team award.

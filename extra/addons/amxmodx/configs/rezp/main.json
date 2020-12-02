@@ -1,0 +1,43 @@
+{
+	"server_browser_info": "Re Zombie Plague",
+	"custom_sky_names":
+	[
+		"space",
+		"blue"
+	],
+	"global_lighting": "c",
+	"nightvision_lighting": "z",
+	"roundover_ct_win": false,
+	"award_notice": true,
+	"chat_prefix": "[RZ]",
+	"prepare_time": 20,
+	"round_time": 180,
+	"warmup":
+	{
+		"enabled": true,
+		"time": 40
+	},
+	"ammopacks":
+	{
+		"enabled": true,
+		"join_amount": 100
+	},
+	"useless_entities":
+	[
+		"func_bomb_target",
+		"info_bomb_target",
+		"info_vip_start",
+		"func_vip_safetyzone",
+		"func_escapezone",
+		"func_hostage_rescue",
+		"info_hostage_rescue",
+		"hostage_entity",
+		"armoury_entity",
+		"player_weaponstrip",
+		"game_player_equip",
+		"env_fog",
+		"env_rain",
+		"env_snow",
+		"monster_scientist"
+	]
+}

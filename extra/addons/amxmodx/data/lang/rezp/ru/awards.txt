@@ -1,0 +1,6 @@
+[ru]
+RZ_AWARD_PLAYER_KILLED = Награда за нейтрализацию врага.
+RZ_AWARD_PLAYER_INFECT = Награда за заражение врага.
+RZ_AWARD_TEAM_WIN = Командная награда.
+RZ_AWARD_TEAM_LOSER = Награда за проигрыш.
+RZ_AWARD_TEAM_DRAW = Командная награда.

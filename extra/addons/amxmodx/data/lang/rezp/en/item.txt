@@ -1,0 +1,14 @@
+[en]
+RZ_ITEMS_TITLE = Extra Items
+RZ_ITEM_MADNESS = Madness
+RZ_ITEM_ANTIDOTE = Antidote
+RZ_ITEM_NIGHTVISION = Nightvision
+RZ_ITEM_ARMOR = Armor
+RZ_ITEM_WPN_AWP = AWP Magnum Sniper
+RZ_ITEM_WPN_M249 = M249 Para Machinegun
+RZ_ITEM_WPN_SG550 = SG550 Auto-Sniper
+RZ_ITEM_WPN_G3SG1 = G3SG1 Auto-Sniper
+RZ_ITEM_NADE_INFECTION = Infection Bomb
+RZ_ITEM_NADE_FIRE = Napalm Grenade
+RZ_ITEM_NADE_FROST = Frost Grenade
+RZ_ITEM_NADE_FLARE = Flare Grenade

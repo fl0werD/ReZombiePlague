@@ -1,0 +1,7 @@
+[ru]
+RZ_ZOMBIE = Зомби
+RZ_HUMAN = Человек
+RZ_NEMESIS = Немезида
+RZ_SURVIVOR = Выживший
+RZ_ASSASSIN = Убийца
+RZ_SNIPER = Снайпер

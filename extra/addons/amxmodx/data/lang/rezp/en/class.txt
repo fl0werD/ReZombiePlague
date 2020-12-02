@@ -1,0 +1,7 @@
+[en]
+RZ_ZOMBIE = Zombie
+RZ_HUMAN = Human
+RZ_NEMESIS = Nemesis
+RZ_SURVIVOR = Survivor
+RZ_ASSASSIN = Assassin
+RZ_SNIPER = Sniper

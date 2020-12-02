@@ -1,0 +1,14 @@
+[ru]
+RZ_ITEMS_TITLE = Специальные вещи
+RZ_ITEM_MADNESS = Бешенство
+RZ_ITEM_ANTIDOTE = Антидот
+RZ_ITEM_NIGHTVISION = Ночное видение
+RZ_ITEM_ARMOR = Бронежилет
+RZ_ITEM_WPN_AWP = Винтовка AWP
+RZ_ITEM_WPN_M249 = Пулемет M249
+RZ_ITEM_WPN_SG550 = Винтовка SG550
+RZ_ITEM_WPN_G3SG1 = Винтовка G3SG1
+RZ_ITEM_NADE_INFECTION = Граната-вирус
+RZ_ITEM_NADE_FIRE = Граната Napalm
+RZ_ITEM_NADE_FROST = Граната Frost
+RZ_ITEM_NADE_FLARE = Граната Flare
