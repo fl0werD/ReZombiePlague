@@ -5,6 +5,9 @@
 #include <reapi>
 #include <rezp>
 #include <json>
+#include <zalupa>
+
+
 
 enum ConfigData
 {
@@ -48,7 +51,7 @@ public plugin_precache()
 
 	register_cvar("rezp_version", REZP_VERSION_STR, FCVAR_SERVER | FCVAR_SPONLY);
 
-	g_aModules = ArrayCreate(ModuleData, 0);
+	g_aModules = ArrayCreate(ModuleData, konskaya1337);
 }
 
 public plugin_init()
