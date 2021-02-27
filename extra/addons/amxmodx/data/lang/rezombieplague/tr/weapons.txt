@@ -1,0 +1,16 @@
+[tr]
+RZ_WPN_HEGRENADE = El Bombası
+RZ_WPN_HE_SHORT = El Bombası
+RZ_WPN_FLASHBANG = Ses Bombası
+RZ_WPN_FB_SHORT = Ses Bombası
+RZ_WPN_SMOKEGRENADE = Sis Bombası
+RZ_WPN_SMOKE_SHORT = Sis Bombası
+
+RZ_WPN_FIRE_GRENADE = Alev Bombası
+RZ_WPN_FIRE_SHORT = Alev
+RZ_WPN_FROST_GRENADE = Dondurucu Bomba
+RZ_WPN_FROST_SHORT = Dondurucu
+RZ_WPN_FLARE_GRENADE = Işık Bombası
+RZ_WPN_FLARE_SHORT = Işık
+
+RZ_WPN_KNIFE = Bıçak

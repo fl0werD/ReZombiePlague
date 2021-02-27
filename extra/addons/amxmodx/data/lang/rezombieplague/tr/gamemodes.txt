@@ -1,0 +1,20 @@
+[tr]
+RZ_GAMEMODE_FMT = ~ %L ~
+RZ_GAMEMODE_MULTI = Çoklu Enfeksiyon Modu
+RZ_GAMEMODE_SWARM = Sürü Modu
+RZ_GAMEMODE_NEMESIS = Nemesis Modu
+RZ_GAMEMODE_SURVIVOR = Hayatta Kalma Modu
+RZ_GAMEMODE_PLAGUE = Veba Modu
+RZ_GAMEMODE_ASSASSIN = Suikastçı Modu
+RZ_GAMEMODE_SNIPER = Keskin Nişancı Modu
+RZ_GAMEMODE_LNJ = Mahşer Modu
+RZ_GAMEMODE_AVS = Suikastçı vs Keskin Nişancı Modu
+RZ_GAMEMODE_NOTICE_MULTI = Çoklu Enfeksiyon
+RZ_GAMEMODE_NOTICE_SWARM = Sürü Modu
+RZ_GAMEMODE_NOTICE_NEMESIS = Nemesis Modu
+RZ_GAMEMODE_NOTICE_SURVIVOR = Hayatta Kalma Modu
+RZ_GAMEMODE_NOTICE_PLAGUE = Veba Modu
+RZ_GAMEMODE_NOTICE_ASSASSIN = Suikastçı Modu
+RZ_GAMEMODE_NOTICE_SNIPER = Keskin Nişancı Modu
+RZ_GAMEMODE_NOTICE_ARMAGEDDON = Mahşer Modu
+RZ_GAMEMODE_NOTICE_AVS = Suikastçı vs Keskin Nişancı Modu

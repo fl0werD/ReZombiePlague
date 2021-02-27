@@ -1,0 +1,16 @@
+[tr]
+RZ_ITEMS_INSUFFICIENT_FOUNDS = Satın almak için yeterli paran yok. ^3%L^1 maliyeti: ^4%L
+RZ_ITEMS_PLAYER_BOUGHT = Oyuncu ^3%n ^4%l ^1satın aldı.
+RZ_ITEMS_TITLE = Ekstra Eşyalar
+RZ_ITEM_MADNESS = Çılgınlık
+RZ_ITEM_ANTIDOTE = Panzehir
+RZ_ITEM_NIGHTVISION = Gece Görüşü
+RZ_ITEM_ARMOR = Zırh
+RZ_ITEM_WPN_AWP = AWP Magnum Sniper
+RZ_ITEM_WPN_M249 = M249 Para Machinegun
+RZ_ITEM_WPN_SG550 = SG550 Auto-Sniper
+RZ_ITEM_WPN_G3SG1 = G3SG1 Auto-Sniper
+RZ_ITEM_NADE_INFECTION = Enfeksiyon Bombası
+RZ_ITEM_NADE_FIRE = Yanıcı Bomba
+RZ_ITEM_NADE_FROST = Dondurucu Bomba
+RZ_ITEM_NADE_FLARE = Işık Bombası

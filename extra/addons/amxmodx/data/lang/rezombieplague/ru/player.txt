@@ -1,0 +1,18 @@
+[ru]
+RZ_ZOMBIE = Зомби
+RZ_HUMAN = Человек
+RZ_NEMESIS = Немезида
+RZ_SURVIVOR = Выживший
+RZ_ASSASSIN = Убийца
+RZ_SNIPER = Снайпер
+
+RZ_SUBZOMBIE_JUMPER_NAME = Попрыгунчик
+RZ_SUBZOMBIE_JUMPER_DESC = Гравитация+
+RZ_SUBZOMBIE_SPRINTER_NAME = Спринтер
+RZ_SUBZOMBIE_SPRINTER_DESC = Скорость+
+RZ_SUBZOMBIE_STONE_NAME = Камень
+RZ_SUBZOMBIE_STONE_DESC = Здоровье+
+RZ_SUBHUMAN_TECHNO_NAME = Техно-танцор
+RZ_SUBHUMAN_TECHNO_DESC = Здоровье+
+RZ_SUBHUMAN_DEAD_NAME = Мертвый внутри
+RZ_SUBHUMAN_DEAD_DESC = Броня+

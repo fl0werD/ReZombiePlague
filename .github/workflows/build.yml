@@ -31,13 +31,14 @@ jobs:
         run: |
           cp -Rf ./rezombieplague/* ./addons/amxmodx/scripting
 
-          mkdir -p ./addons/amxmodx/plugins/rezp/addons
-          mkdir -p ./addons/amxmodx/plugins/rezp/classes
-          mkdir -p ./addons/amxmodx/plugins/rezp/gamemodes
-          mkdir -p ./addons/amxmodx/plugins/rezp/items
-          mkdir -p ./addons/amxmodx/plugins/rezp/menus
-          mkdir -p ./addons/amxmodx/plugins/rezp/subclasses
-          mkdir -p ./addons/amxmodx/plugins/rezp/weapons
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/api
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/addons
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/player
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/gamemodes
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/items
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/menus
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/weapons
+          mkdir -p ./addons/amxmodx/plugins/rezombieplague/configs
 
           cd addons/amxmodx/scripting
           chmod +x amxxpc32.so

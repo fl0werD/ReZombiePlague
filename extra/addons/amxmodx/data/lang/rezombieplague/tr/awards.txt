@@ -1,0 +1,6 @@
+[tr]
+RZ_AWARD_PLAYER_KILLED = Bir düşman öldürdüğün için ödül.
+RZ_AWARD_PLAYER_INFECT = Bir düşmanı enfekte etme ödülü.
+RZ_AWARD_TEAM_WIN = Takım ödülü.
+RZ_AWARD_TEAM_LOSER = Kaybettiğiniz için gelir.
+RZ_AWARD_TEAM_DRAW = Takım ödülü

@@ -4,7 +4,9 @@
 
 #define _rezp_util_included
 
-// You have to create len and text[] variables before call add_formatex
+/**
+ * You have to create len and text[] variables before call add_formatex.
+ */
 #define add_formatex(%0)			len += formatex(text[len], charsmax(text) - len, %0)
 
 #define MENU_CLOSE(%0)				(show_menu(%0, 0, "", 0))
@@ -16,7 +18,7 @@
 #define FFADE_MODULATE				0x0002 // Modulate (don't blend)
 #define FFADE_STAYOUT				0x0004 // ignores the duration, stays faded out until new ScreenFade message received
 
-stock UTIL_SetRendering(id, mode = kRenderNormal, Float:amount = 0.0, Float:color[3] = NULL_VECTOR, fx = kRenderFxNone)
+stock rz_util_set_rendering(id, mode = kRenderNormal, Float:amount = 0.0, Float:color[3] = NULL_VECTOR, fx = kRenderFxNone)
 {
 	set_entvar(id, var_rendermode, mode);
 	set_entvar(id, var_renderamt, amount);
@@ -24,7 +26,7 @@ stock UTIL_SetRendering(id, mode = kRenderNormal, Float:amount = 0.0, Float:colo
 	set_entvar(id, var_renderfx, fx);
 }
 
-stock UTIL_LightStyle(id, index, const style[])
+stock rz_util_send_lightstyle(id, index, const style[])
 {
 	message_begin(MSG_ONE, SVC_LIGHTSTYLE, _, id);
 	write_byte(index);
@@ -32,7 +34,7 @@ stock UTIL_LightStyle(id, index, const style[])
 	message_end();
 }
 
-stock UTIL_WeaponAnim(id, anim, body = 0)
+stock rz_util_send_weaponanim(id, anim, body = 0)
 {
 	set_entvar(id, var_weaponanim, anim);
 
@@ -42,7 +44,7 @@ stock UTIL_WeaponAnim(id, anim, body = 0)
 	message_end();
 }
 
-stock UTIL_ScreenFade(id, color[3], Float:fadeTime, Float:fadeHold = 0.0, alpha = 0, fadeFlags = 0)
+stock rz_util_send_screenfade(id, color[3], Float:fadeTime, Float:fadeHold = 0.0, alpha = 0, fadeFlags = 0)
 {
 	static msg;
 

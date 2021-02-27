@@ -53,13 +53,14 @@ amxxpc=$(realpath ${amxxpc})
 
 # Create dir
 rm -rf ${OUTPUT_DIR} && mkdir ${OUTPUT_DIR}
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/addons
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/classes
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/gamemodes
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/items
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/menus
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/subclasses
-mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezp/weapons
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/api
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/addons
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/player
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/gamemodes
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/items
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/menus
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/weapons
+mkdir -p ${OUTPUT_DIR}/addons/amxmodx/plugins/rezombieplague/configs
 
 scripting_dir=${OUTPUT_DIR}/addons/amxmodx/scripting
 cp -rp rezombieplague    ${scripting_dir}

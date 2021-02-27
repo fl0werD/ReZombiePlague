@@ -15,6 +15,6 @@ ReHLDS, ReGameDLL, Metamod-r (or Metamod-P), AMX Mod X, ReAPI.
 ## How can I help the project?
 Just install it on your game server and report problems you faced.
 
-## Credits
+## Acknowledgments
 Thanks to projects: ReGameDLL_CS, AMX Mod X, ReAPI<br/>
-Thanks to humans: wellasgood, Nvoymax, Alex, DANDY, steelzzz, Droads, Nordic Warrior, kostikovkirill, CaHTuK, Bodom, DimaS, bristol, wopox1337 and others.<br/>
+Thanks to humans: wellasgood, Nvoymax, Alex, DANDY, steelzzz, Droads, Nordic Warrior, kostikovkirill, CaHTuK, Bodom, DimaS, bristol, wopox1337, nrjdemon, PurposeLess and others.<br/>

@@ -4,7 +4,9 @@
 
 #define _util_tempentities_included
 
-// You have to call message_begin[/_f] before call stocks
+/**
+ * You have to call message_begin[/_f] before call stocks.
+ */
 
 stock TE_BeamPoints(Float:start[3], Float:end[3], spriteIndex, startingFrame, frameRate, life, lineWidth, noiseAmplitude, color[3], brightness, scrollSpeed)
 {
@@ -594,14 +596,14 @@ stock TE_BreakModel(Float:position[3], Float:size[3], Float:velocity[3], randomV
 	message_end();
 }
 
-stock TE_GunShotDecal(Float:position[3], entityIndex, decal)
+stock TE_GunShotDecal(Float:position[3], entityIndex, decalNumber)
 {
 	write_byte(TE_GUNSHOTDECAL);
 	write_coord_f(position[0]); // position.x
 	write_coord_f(position[1]); // position.y
 	write_coord_f(position[2]); // position.z
-	write_short(entityIndex); // entity index???
-	write_byte(decal); // decal???
+	write_short(entityIndex); // entity index
+	write_byte(decalNumber); // decal number
 	message_end();
 }
 
@@ -631,16 +633,15 @@ stock TE_ArmorRicochet(Float:position[3], scale)
 	message_end();
 }
 
-stock TE_PlayerDecal()
+stock TE_PlayerDecal(playerindex, Float:position[3], entity, decalNumber)
 {
 	write_byte(TE_PLAYERDECAL);
-	write_byte(); // playerindex
+	write_byte(playerindex); // playerindex
 	write_coord_f(position[0]); // position.x
 	write_coord_f(position[1]); // position.y
 	write_coord_f(position[2]); // position.z
-	write_short(); // entity???
-	write_byte(); // decal number
-	[optional] write_short(); // model index
+	write_short(entity); // entity
+	write_byte(decalNumber); // decal number
 	message_end();
 }
 

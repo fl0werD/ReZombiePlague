@@ -4,162 +4,159 @@
 
 #define _util_messages_included
 
-/*
-	VoiceMask
-	ReqState
-DONE! CurWeapon
-	Geiger
-DONE! Flashlight
-DONE! FlashBat
-	Health
-	Damage
-DONE! Battery
-	Train
-	HudTextPro
-	HudText
-	SayText
-	TextMsg
-DONE! WeaponList
-	ResetHUD
-	InitHUD
-	ViewMode
-	GameTitle
-DONE! DeathMsg
-DONE! ScoreAttrib
-	ScoreInfo
-	TeamInfo
-	TeamScore
-	GameMode
-	MOTD
-	ServerName
-	AmmoPickup
-	WeapPickup
-	ItemPickup
-	HideWeapon
-	SetFOV
-	ShowMenu
-	ScreenShake
-	ScreenFade
-	AmmoX
-	SendAudio
-	RoundTime
-DONE! Money
-	ArmorType
-DONE! BlinkAcct
-	StatusValue
-	StatusText
-	StatusIcon
-DONE! BarTime
-	ReloadSound
-	Crosshair
-	NVGToggle
-	Radar
-	Spectator
-	VGUIMenu
-	TutorText
-	TutorLine
-	TutorState
-	TutorClose
-	AllowSpec
-	BombDrop
-	BombPickup
-	ClCorpse
-	HostagePos
-	HostageK
-	HLTV
-	SpecHealth
-	ForceCam
-	ADStop
-	ReceiveW
-	CZCareer
-	CZCareerHUD
-	ShadowIdx
-	TaskTime
-	Scenario
-	BotVoice
-	BuyClose
-	SpecHealth2
-DONE! BarTime2
-	ItemStatus
-	Location
-	BotProgress
-	Brass
-	Fog
-	ShowTimer
-	HudTextArgs
-	Account
-	HealthInfo
+/**
+ * You have to call message_begin[/_f] before call stocks.
+ */
 
-stock Send(id)
+enum
 {
-	static msg;
+	gmsgVoiceMask = 64,
+	gmsgReqState, // Undone
+	gmsgCurWeapon,
+	gmsgGeiger, // Undone
+	gmsgFlashlight,
+	gmsgFlashBat,
+	gmsgHealth, // Undone
+	gmsgDamage,
+	gmsgBattery,
+	gmsgTrain, // Undone
+	gmsgHudTextPro, // Undone
+	gmsgHudText, // Undone
+	gmsgSayText, // Undone
+	gmsgTextMsg,
+	gmsgWeaponList,
+	gmsgResetHUD, // Undone
+	gmsgInitHUD, // Undone
+	gmsgViewMode, // Undone
+	gmsgGameTitle, // Undone
+	gmsgDeathMsg,
+	gmsgScoreAttrib,
+	gmsgScoreInfo, // Undone
+	gmsgTeamInfo, // Undone
+	gmsgTeamScore, // Undone
+	gmsgGameMode, // Undone
+	gmsgMOTD, // Undone
+	gmsgServerName, // Undone
+	gmsgAmmoPickup, // Undone
+	gmsgWeapPickup, // Undone
+	gmsgItemPickup, // Undone
+	gmsgHideWeapon, // Undone
+	gmsgSetFOV, // Undone
+	gmsgShowMenu, // Undone
+	gmsgScreenShake, // Undone
+	gmsgScreenFade, // Undone
+	gmsgAmmoX, // Undone
+	gmsgSendAudio, // Undone
+	gmsgRoundTime, // Undone
+	gmsgMoney,
+	gmsgArmorType, // Undone
+	gmsgBlinkAcct,
+	gmsgStatusValue, // Undone
+	gmsgStatusText, // Undone
+	gmsgStatusIcon,
+	gmsgBarTime,
+	gmsgReloadSound, // Undone
+	gmsgCrosshair, // Undone
+	gmsgNVGToggle, // Undone
+	gmsgRadar, // Undone
+	gmsgSpectator, // Undone
+	gmsgVGUIMenu, // Undone
+	gmsgTutorText, // Undone
+	gmsgTutorLine, // Undone
+	gmsgTutorState, // Undone
+	gmsgTutorClose, // Undone
+	gmsgAllowSpec, // Undone
+	gmsgBombDrop, // Undone
+	gmsgBombPickup, // Undone
+	gmsgClCorpse, // Undone
+	gmsgHostagePos, // Undone
+	gmsgHostageK, // Undone
+	gmsgHLTV, // Undone
+	gmsgSpecHealth, // Undone
+	gmsgForceCam, // Undone
+	gmsgADStop, // Undone
+	gmsgReceiveW, // Undone
+	gmsgCZCareer, // Undone
+	gmsgCZCareerHUD, // Undone
+	gmsgShadowIdx, // Undone
+	gmsgTaskTime, // Undone
+	gmsgScenario, // Undone
+	gmsgBotVoice, // Undone
+	gmsgBuyClose, // Undone
+	gmsgSpecHealth2, // Undone
+	gmsgBarTime2, 
+	gmsgItemStatus, // Undone
+	gmsgLocation, // Undone
+	gmsgBotProgress, // Undone
+	gmsgBrass, // Undone
+	gmsgFog, // Undone
+	gmsgShowTimer, // Undone
+	gmsgHudTextArgs, // Undone
+	gmsgAccount, // Undone
+	gmsgHealthInfo, // Undone
+};
 
-	if (!msg)
-		msg = get_user_msgid("");
-
-	message_begin(MSG_ONE, msg, _, id);
+/*stock Send(id)
+{
+	message_begin(MSG_ONE, gmsg, _, id);
 	message_end();
 }*/
 
-stock SendCurWeapon(id, isActive, any:weaponId, clipAmmo)
+stock SendCurWeapon(isActive, any:weaponId, clipAmmo)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("CurWeapon");
-
-	message_begin(MSG_ONE, msg, _, id);
 	write_byte(isActive);
 	write_byte(weaponId);
 	write_byte(clipAmmo);
 	message_end();
 }
 
-stock SendFlashlight(id, flag, chargePercent)
+stock SendFlashlight(flag, chargePercent)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("Flashlight");
-
-	message_begin(MSG_ONE, msg, _, id);
 	write_byte(flag);
 	write_byte(chargePercent);
 	message_end();
 }
 
-stock SendFlashBat(id, chargePercentage)
+stock SendFlashBat(chargePercentage)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("FlashBat");
-
-	message_begin(MSG_ONE, msg, _, id);
 	write_byte(chargePercentage);
 	message_end();
 }
 
-stock SendBattery(id, armor)
+stock SendDamage(damageSave, damageTake, damageType, Float:coord[3] = NULL_VECTOR)
 {
-	static msg;
+	write_byte(damageSave);
+	write_byte(damageTake);
+	write_long(damageType);
+	write_coord_f(coord[0]);
+	write_coord_f(coord[1]);
+	write_coord_f(coord[2]);
+	message_end();
+}
 
-	if (!msg)
-		msg = get_user_msgid("Battery");
-
-	message_begin(MSG_ONE, msg, _, id);
+stock SendBattery(armor)
+{
 	write_short(armor);
 	message_end();
 }
 
-stock SendWeaponList(id, const name[], ammo1, maxAmmo1, ammo2, maxAmmo2, slot, position, any:weaponId, flags)
+stock SendTextMsg(msgDest, msgName[], param1[] = "", param2[] = "", param3[] = "", param4[] = "")
 {
-	static msg;
+	write_byte(msgDest);
+	write_string(msgName);
+	if (param1[0])
+		write_string(param1);
+	if (param2[0])
+		write_string(param2);
+	if (param3[0])
+		write_string(param3);
+	if (param4[0])
+		write_string(param4);
+	message_end();
+}
 
-	if (!msg)
-		msg = get_user_msgid("WeaponList");
-
-	message_begin(MSG_ONE, msg, _, id);
+stock SendWeaponList(const name[], ammo1, maxAmmo1, ammo2, maxAmmo2, slot, position, any:weaponId, flags)
+{
 	write_string(name);
 	write_byte(ammo1);
 	write_byte(maxAmmo1);
@@ -174,12 +171,6 @@ stock SendWeaponList(id, const name[], ammo1, maxAmmo1, ammo2, maxAmmo2, slot, p
 
 stock SendDeathMsg(killer, victim, headshot, const weapon[])
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("DeathMsg");
-
-	message_begin(MSG_ALL, msg);
 	write_byte(killer);
 	write_byte(victim);
 	write_byte(headshot);
@@ -189,62 +180,47 @@ stock SendDeathMsg(killer, victim, headshot, const weapon[])
 
 stock SendScoreAttrib(playerId, flags)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("ScoreAttrib");
-
-	message_begin(MSG_ALL, msg);
 	write_byte(playerId);
 	write_byte(flags);
 	message_end();
 }
 
-stock SendMoney(id, amount, any:flag)
+stock SendMoney(amount, any:flag)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("Money");
-
-	message_begin(MSG_ONE, msg, _, id);
 	write_long(amount);
 	write_byte(flag);
 	message_end();
 }
 
-stock SendBlinkAcct(id, blinkAmt)
+stock SendBlinkAcct(blinkAmt)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("BlinkAcct");
-
-	message_begin(MSG_ONE, msg, _, id);
 	write_byte(blinkAmt);
 	message_end();
 }
 
-stock SendBarTime(id, duration = 0)
+stock SendStatusIcon(status, const spriteName[], color[3] = { 0, 0, 0 })
 {
-	static msg;
+	write_byte(status);
+	write_string(spriteName);
 
-	if (!msg)
-		msg = get_user_msgid("BarTime");
+	if (status != 0)
+	{
+		write_byte(color[0]);
+		write_byte(color[1]);
+		write_byte(color[2]);
+	}
 
-	message_begin(MSG_ONE, msg, _, id);
+	message_end();
+}
+
+stock SendBarTime(duration = 0)
+{
 	write_short(duration);
 	message_end();
 }
 
-stock SendBarTime2(id, duration, startPercent)
+stock SendBarTime2(duration, startPercent)
 {
-	static msg;
-
-	if (!msg)
-		msg = get_user_msgid("BarTime");
-
-	message_begin(MSG_ONE, msg, _, id);
 	write_short(duration);
 	write_short(startPercent);
 	message_end();

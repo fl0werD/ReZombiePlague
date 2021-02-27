@@ -1,0 +1,16 @@
+[ru]
+RZ_WPN_HEGRENADE = Осколочная граната
+RZ_WPN_HE_SHORT = Осколочная
+RZ_WPN_FLASHBANG = Световая граната
+RZ_WPN_FB_SHORT = Световая
+RZ_WPN_SMOKEGRENADE = Дымовая граната
+RZ_WPN_SMOKE_SHORT = Дымовая
+
+RZ_WPN_FIRE_GRENADE = Поджигающая граната
+RZ_WPN_FIRE_SHORT = Поджигающая
+RZ_WPN_FROST_GRENADE = Замораживющая граната
+RZ_WPN_FROST_SHORT = Замораживющая
+RZ_WPN_FLARE_GRENADE = Освещающая граната
+RZ_WPN_FLARE_SHORT = Освещающая
+
+RZ_WPN_KNIFE = Нож
