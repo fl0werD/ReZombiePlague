@@ -59,8 +59,10 @@ public rz_class_change_post(id, attacker)
 			continue;
 
 		team = get_member(i, m_iTeam);
-
-		if (team != TEAM_TERRORIST && team != TEAM_CT)
+		if (!(TEAM_TERRORIST <= team <= TEAM_CT))
+			continue;
+		
+		if (get_member(i, m_iNumSpawns) < 1)
 			continue;
 
 		if (winTeam == TEAM_UNASSIGNED)
